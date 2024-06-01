@@ -9,7 +9,7 @@ Kyber is a post-quantum cryptographic algorithm designed to secure communication
 # Purpose:
 To securely generate and manage public/private key pairs.
 
-![Client-Server Interaction](Kyber_WorkFlow.png)
+![Client-Server Interaction](Kyber.png)
 
 The provided picture illustrates the interaction between the client-side and server-side implementations of Kyber using public key encryption and the KEM (Key Encapsulation Mechanism). The client initiates the communication by generating key pairs and encrypting data(C) cipher containing (encapsulated key) using public key of the server, after encryption which is then securely transmitted to the server. The server receives the encrypted (C) cipher data containing (encapsulated symmetric Key), the server side decrypts it using private key of their own, and processes the request, ensuring a secure end-to-end communication channel to get the same key on both ends. This setup is designed to safeguard against potential threats posed by quantum computing advancements, ensuring long-term data security.
 
